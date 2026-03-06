@@ -108,27 +108,29 @@
   }
   </script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-
   <style>
     /* ─── Design Tokens ─────────────────────────────────────── */
     :root {
-      --yellow:      #ffc72c;
-      --grey:        #425563;
-      --dark-blue:   #001e32;
-      --hematite:    #2A3C4A;
-      --obsidian:    #1D313F;
-      --white:       #ffffff;
-      --white-80:    rgba(255,255,255,0.80);
-      --white-50:    rgba(255,255,255,0.50);
-      --white-15:    rgba(255,255,255,0.08);
-      --yellow-glow: rgba(255,199,44,0.18);
-      --radius:      12px;
-      --radius-lg:   20px;
-      --font:        'Inter', system-ui, sans-serif;
-      --max-w:       1200px;
+      --yellow:          #ffc72c;
+      --grey:            #415563;
+      --dark-blue:       #001e32;
+      --hematite:        #2A3C4A;
+      --obsidian:        #1D313F;
+      --white:           #ffffff;
+      --white-80:        rgba(255,255,255,0.80);
+      --white-50:        rgba(255,255,255,0.50);
+      --white-15:        rgba(255,255,255,0.08);
+      --yellow-glow:     rgba(255,199,44,0.18);
+      --light-grey:      #ecebe4;
+      --medium-grey:     #b4b4aa;
+      --dark-grey:       #77746e;
+      --electric-green:  #7cc8b1;
+      --sun-gold:        #d6a144;
+      --clay-red:        #9e4d2f;
+      --radius:          12px;
+      --radius-lg:       20px;
+      --font:            Arial, 'Helvetica Neue', sans-serif;
+      --max-w:           1200px;
     }
 
     /* ─── Reset ─────────────────────────────────────────────── */
@@ -171,6 +173,7 @@
       background: rgba(255,255,255,0.1);
     }
     .yellow { color: var(--yellow); }
+    .green  { color: var(--electric-green); }
 
     /* ─── Nav ───────────────────────────────────────────────── */
     nav {
@@ -618,7 +621,7 @@
     }
     .feat-list li::before {
       content: '✓';
-      color: var(--yellow);
+      color: var(--electric-green);
       font-weight: 900;
       flex-shrink: 0;
       margin-top: 1px;
@@ -642,7 +645,7 @@
       font-weight: 700;
       margin-bottom: 12px;
       letter-spacing: -0.01em;
-      color: var(--yellow);
+      color: var(--electric-green);
     }
     .faq-item p {
       font-size: 14px;
@@ -915,7 +918,7 @@
 
         <h1>
           Mine Smarter.<br/>
-          <span class="yellow">Optimize. Simulate. Predict.</span>
+          <span class="green">Optimize. Simulate. Predict.</span>
         </h1>
 
         <p class="hero-sub">
@@ -1174,7 +1177,7 @@
         </div>
         <div class="feat-text">
           <div class="section-label"><span class="tag">Simulation</span></div>
-          <h2>Model complexity.<br/><span class="yellow">Remove uncertainty.</span></h2>
+          <h2>Model complexity.<br/><span class="green">Remove uncertainty.</span></h2>
           <p>
             Traditional mine planning relies on spreadsheet averages and rules of thumb. SimulatOre replaces guesswork with high-fidelity agent-based and discrete event simulation, capturing the stochastic nature of real mining operations — equipment variability, weather, shift patterns, and downstream bottlenecks.
           </p>
@@ -1226,7 +1229,7 @@
         </div>
         <div class="feat-text">
           <div class="section-label"><span class="tag">Optimization</span></div>
-          <h2>Find the optimal.<br/><span class="yellow">Not just the feasible.</span></h2>
+          <h2>Find the optimal.<br/><span class="green">Not just the feasible.</span></h2>
           <p>
             SimulatOre integrates mathematical optimization solvers directly into simulation workflows via webhooks and API. Define your objective function — maximize throughput, minimize cost, balance fleet utilization — and let the solver find provably optimal solutions constrained by your operational realities.
           </p>
@@ -1281,7 +1284,7 @@
         </div>
         <div class="feat-text">
           <div class="section-label"><span class="tag">Predictive Modelling</span></div>
-          <h2>See what's coming.<br/><span class="yellow">Before it arrives.</span></h2>
+          <h2>See what's coming.<br/><span class="green">Before it arrives.</span></h2>
           <p>
             Mine operations generate vast quantities of data. SimulatOre turns that data into forward-looking intelligence. Statistical and machine learning models trained on your historical operational data forecast failures, production shortfalls, and grade variability — enabling proactive intervention rather than costly reaction.
           </p>
